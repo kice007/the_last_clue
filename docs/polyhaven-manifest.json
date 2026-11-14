@@ -1,0 +1,321 @@
+{
+  "fetchedAt": "2026-11-14T05:39:56.388Z",
+  "license": "CC0",
+  "items": [
+    {
+      "id": "GreenChair_01",
+      "kind": "model",
+      "name": "Green Chair 01",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\GreenChair_01/GreenChair_01.gltf",
+      "source": "https://polyhaven.com/a/GreenChair_01"
+    },
+    {
+      "id": "ArmChair_01",
+      "kind": "model",
+      "name": "Arm Chair 01",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\ArmChair_01/ArmChair_01.gltf",
+      "source": "https://polyhaven.com/a/ArmChair_01"
+    },
+    {
+      "id": "mantel_clock_01",
+      "kind": "model",
+      "name": "Mantel Clock 01",
+      "authors": [
+        "Yann Kervran",
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\mantel_clock_01/mantel_clock_01.gltf",
+      "source": "https://polyhaven.com/a/mantel_clock_01"
+    },
+    {
+      "id": "vintage_oil_lamp",
+      "kind": "model",
+      "name": "Vintage Oil Lamp",
+      "authors": [
+        "Monsta3D"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\vintage_oil_lamp/vintage_oil_lamp.gltf",
+      "source": "https://polyhaven.com/a/vintage_oil_lamp"
+    },
+    {
+      "id": "book_encyclopedia_set_01",
+      "kind": "model",
+      "name": "Book Encyclopedia Set 01",
+      "authors": [
+        "John Malcolm"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\book_encyclopedia_set_01/book_encyclopedia_set_01.gltf",
+      "source": "https://polyhaven.com/a/book_encyclopedia_set_01"
+    },
+    {
+      "id": "vintage_cabinet_01",
+      "kind": "model",
+      "name": "Vintage Cabinet 01",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\vintage_cabinet_01/vintage_cabinet_01.gltf",
+      "source": "https://polyhaven.com/a/vintage_cabinet_01"
+    },
+    {
+      "id": "fancy_picture_frame_01",
+      "kind": "model",
+      "name": "Fancy Picture Frame 01",
+      "authors": [
+        "Rob Tuytel",
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\fancy_picture_frame_01/fancy_picture_frame_01.gltf",
+      "source": "https://polyhaven.com/a/fancy_picture_frame_01"
+    },
+    {
+      "id": "ornate_mirror_01",
+      "kind": "model",
+      "name": "Ornate Mirror 01",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\ornate_mirror_01/ornate_mirror_01.gltf",
+      "source": "https://polyhaven.com/a/ornate_mirror_01"
+    },
+    {
+      "id": "Chandelier_01",
+      "kind": "model",
+      "name": "Chandelier 01",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\Chandelier_01/Chandelier_01.gltf",
+      "source": "https://polyhaven.com/a/Chandelier_01"
+    },
+    {
+      "id": "brass_candleholders",
+      "kind": "model",
+      "name": "Brass Candleholders",
+      "authors": [
+        "Tina"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\brass_candleholders/brass_candleholders.gltf",
+      "source": "https://polyhaven.com/a/brass_candleholders"
+    },
+    {
+      "id": "magnifying_glass_01",
+      "kind": "model",
+      "name": "Magnifying Glass 01",
+      "authors": [
+        "Nazar Borodavka"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\magnifying_glass_01/magnifying_glass_01.gltf",
+      "source": "https://polyhaven.com/a/magnifying_glass_01"
+    },
+    {
+      "id": "vintage_grandfather_clock_01",
+      "kind": "model",
+      "name": "Vintage Grandfather Clock 01",
+      "authors": [
+        "Yann Kervran",
+        "James Ray Cock"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\vintage_grandfather_clock_01/vintage_grandfather_clock_01.gltf",
+      "source": "https://polyhaven.com/a/vintage_grandfather_clock_01"
+    },
+    {
+      "id": "ClassicConsole_01",
+      "kind": "model",
+      "name": "Classic Console 01",
+      "authors": [
+        "Kirill Sannikov"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\ClassicConsole_01/ClassicConsole_01.gltf",
+      "source": "https://polyhaven.com/a/ClassicConsole_01"
+    },
+    {
+      "id": "vintage_pocket_watch",
+      "kind": "model",
+      "name": "Vintage Pocket Watch",
+      "authors": [
+        "Tal Swicegood"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\vintage_pocket_watch/vintage_pocket_watch.gltf",
+      "source": "https://polyhaven.com/a/vintage_pocket_watch"
+    },
+    {
+      "id": "side_table_01",
+      "kind": "model",
+      "name": "Side Table 01",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\side_table_01/side_table_01.gltf",
+      "source": "https://polyhaven.com/a/side_table_01"
+    },
+    {
+      "id": "herringbone_parquet",
+      "kind": "texture",
+      "name": "Herringbone Parquet",
+      "authors": [
+        "Jenelle van Heerden",
+        "Sergej Majboroda"
+      ],
+      "path": "public\\assets\\textures\\materials\\herringbone_parquet",
+      "source": "https://polyhaven.com/a/herringbone_parquet"
+    },
+    {
+      "id": "dark_paneled_wood",
+      "kind": "texture",
+      "name": "Dark Paneled Wood",
+      "authors": [
+        "Dimitrios Savva"
+      ],
+      "path": "public\\assets\\textures\\materials\\dark_paneled_wood",
+      "source": "https://polyhaven.com/a/dark_paneled_wood"
+    },
+    {
+      "id": "plastered_wall_04",
+      "kind": "texture",
+      "name": "Plastered Wall 04",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "path": "public\\assets\\textures\\materials\\plastered_wall_04",
+      "source": "https://polyhaven.com/a/plastered_wall_04"
+    },
+    {
+      "id": "marble_01",
+      "kind": "texture",
+      "name": "Marble 01",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "path": "public\\assets\\textures\\materials\\marble_01",
+      "source": "https://polyhaven.com/a/marble_01"
+    },
+    {
+      "id": "velour_velvet",
+      "kind": "texture",
+      "name": "Velour Velvet",
+      "authors": [
+        "colormass",
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\textures\\materials\\velour_velvet",
+      "source": "https://polyhaven.com/a/velour_velvet"
+    },
+    {
+      "id": "black_walnut_veneer_01",
+      "kind": "texture",
+      "name": "Black Walnut Veneer 01",
+      "authors": [
+        "Jenelle van Heerden"
+      ],
+      "path": "public\\assets\\textures\\materials\\black_walnut_veneer_01",
+      "source": "https://polyhaven.com/a/black_walnut_veneer_01"
+    },
+    {
+      "id": "brown_leather",
+      "kind": "texture",
+      "name": "Brown Leather",
+      "authors": [
+        "Rob Tuytel"
+      ],
+      "path": "public\\assets\\textures\\materials\\brown_leather",
+      "source": "https://polyhaven.com/a/brown_leather"
+    },
+    {
+      "id": "round_spectacles",
+      "kind": "model",
+      "name": "Round Spectacles",
+      "authors": [
+        "Sean Buckley"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\round_spectacles/round_spectacles.gltf",
+      "source": "https://polyhaven.com/a/round_spectacles"
+    },
+    {
+      "id": "cigarette_case",
+      "kind": "model",
+      "name": "Cigarette Case",
+      "authors": [
+        "Michał Wiśniewski"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\cigarette_case/cigarette_case.gltf",
+      "source": "https://polyhaven.com/a/cigarette_case"
+    },
+    {
+      "id": "chess_set",
+      "kind": "model",
+      "name": "Chess Set",
+      "authors": [
+        "Riley Queen"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\chess_set/chess_set.gltf",
+      "source": "https://polyhaven.com/a/chess_set"
+    },
+    {
+      "id": "wooden_candlestick",
+      "kind": "model",
+      "name": "Wooden Candlestick",
+      "authors": [
+        "Josh Dean"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\wooden_candlestick/wooden_candlestick.gltf",
+      "source": "https://polyhaven.com/a/wooden_candlestick"
+    },
+    {
+      "id": "marble_bust_01",
+      "kind": "model",
+      "name": "Marble Bust 01",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\marble_bust_01/marble_bust_01.gltf",
+      "source": "https://polyhaven.com/a/marble_bust_01"
+    },
+    {
+      "id": "antique_ceramic_vase_01",
+      "kind": "model",
+      "name": "Antique Ceramic Vase 01",
+      "authors": [
+        "James Ray Cock"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\antique_ceramic_vase_01/antique_ceramic_vase_01.gltf",
+      "source": "https://polyhaven.com/a/antique_ceramic_vase_01"
+    },
+    {
+      "id": "carved_wooden_elephant",
+      "kind": "model",
+      "name": "Carved Wooden Elephant",
+      "authors": [
+        "Greg Zaal"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\carved_wooden_elephant/carved_wooden_elephant.gltf",
+      "source": "https://polyhaven.com/a/carved_wooden_elephant"
+    },
+    {
+      "id": "horse_statue_01",
+      "kind": "model",
+      "name": "Horse Statue 01",
+      "authors": [
+        "Rico Cilliers"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\horse_statue_01/horse_statue_01.gltf",
+      "source": "https://polyhaven.com/a/horse_statue_01"
+    },
+    {
+      "id": "pocket_watch",
+      "kind": "model",
+      "name": "Pocket Watch",
+      "authors": [
+        "PierreB3D"
+      ],
+      "path": "public\\assets\\props\\polyhaven\\pocket_watch/pocket_watch.gltf",
+      "source": "https://polyhaven.com/a/pocket_watch"
+    }
+  ]
+}

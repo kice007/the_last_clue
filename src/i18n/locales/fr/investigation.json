@@ -1,0 +1,44 @@
+{
+  "place": "Blackwood Manor · Bureau",
+  "title": "Le bureau d’Alexander Whitmore",
+  "time": "Nuit du 14 novembre 1908 · 23 h 40",
+  "prototype": "Prototype local · sans multijoueur",
+  "loading": "On ouvre la porte du bureau…",
+  "intro": {
+    "date": "14 novembre 1908 — 23 h 40",
+    "line": "Le corps a été porté au petit salon. Rien d’autre n’a été déplacé."
+  },
+  "views": {
+    "label": "Points de vue",
+    "seuil": "Le seuil",
+    "bureau": "Le bureau",
+    "cheminee": "La cheminée",
+    "fauteuil": "Le fauteuil",
+    "bibliotheque": "La bibliothèque",
+    "fenetre": "La fenêtre",
+    "tapis": "Sous le bureau"
+  },
+  "hover": "Examiner",
+  "examinables": "Tout peut compter. Rien ne le dit.",
+  "inspect": {
+    "rotate": "Faites pivoter l’objet",
+    "observation": "Détails",
+    "add": "Ajouter au dossier",
+    "added": "Au dossier",
+    "back": "Reposer",
+    "status": "Collectée",
+    "number": "PIÈCE N° {{n}}",
+    "unlisted": "NON RÉPERTORIÉ"
+  },
+  "dossier": {
+    "label": "Dossier",
+    "empty": "Aucune pièce pour l’instant. Fouillez la pièce.",
+    "count": "{{n}} au dossier"
+  },
+  "toast": "Pièce n° {{n}} ajoutée au dossier commun",
+  "partner": {
+    "name": "Insp. Reyes",
+    "where": "Chambre de l’intendante"
+  },
+  "keys": "Glisser : tourner la tête · ← → points de vue · Échap : reposer"
+}

@@ -1,0 +1,26 @@
+{
+  "brand": "THE LAST CLUE",
+  "tagline": "Deux inspecteurs. Une vérité. Chaque indice compte.",
+  "audio": {
+    "on": "Couper l'ambiance sonore",
+    "off": "Activer l'ambiance sonore"
+  },
+  "nav": {
+    "back": "Retour",
+    "home": "Accueil"
+  },
+  "webgl": {
+    "title": "Affichage 3D indisponible",
+    "body": "Votre navigateur ne prend pas en charge WebGL. Les scènes d'enquête nécessitent un navigateur récent (Chrome, Firefox ou Edge) avec l'accélération graphique activée."
+  },
+  "placeholder": {
+    "status": "Dossier en préparation",
+    "phase": "Prévu en phase {{phase}}",
+    "note": "Cet écran sera construit d'après la maquette validée."
+  },
+  "notFound": {
+    "title": "Pièce introuvable",
+    "body": "Cette porte ne mène nulle part.",
+    "cta": "Revenir à l'accueil"
+  }
+}

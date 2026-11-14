@@ -1,0 +1,16 @@
+{
+  "auth": { "title": "Identification", "summary": "Connexion et création du profil d'inspecteur." },
+  "profile": { "title": "Profil d'inspecteur", "summary": "Nom de service et portrait." },
+  "lobby": { "title": "Salle d'enquête privée", "summary": "Créer une salle, partager le code, attendre son partenaire." },
+  "cases": { "title": "Dossiers disponibles", "summary": "Choix de l'affaire, difficulté, durée." },
+  "briefing": { "title": "Briefing", "summary": "Victime, lieu, circonstances et objectifs." },
+  "office": { "title": "Bureau d'enquête", "summary": "Hub 3D : dossiers, archives, tableau." },
+  "scene": { "title": "Scène de crime", "summary": "Exploration 3D et objets examinables." },
+  "evidence": { "title": "Dossier des preuves", "summary": "Inventaire, statuts et détails." },
+  "suspects": { "title": "Fiches suspects", "summary": "Identités, liens, déclarations." },
+  "interrogation": { "title": "Interrogatoire", "summary": "Questions, présentation de preuves, contradictions." },
+  "board": { "title": "Tableau d'enquête", "summary": "Cartes, liens, hypothèses et chronologie." },
+  "verdict": { "title": "Rapport final", "summary": "Coupable, mobile, méthode, preuves — signé à deux." },
+  "revelation": { "title": "Révélation", "summary": "La solution, expliquée indice par indice." },
+  "history": { "title": "Affaires classées", "summary": "Historique des enquêtes terminées." }
+}
