@@ -1,7 +1,7 @@
 # THE LAST CLUE — Avancement et suite
 
 > Jeu d'enquête criminelle coopératif à deux, dans le navigateur. Projet **privé**, joué par deux personnes.
-> Mise à jour : 14 novembre 2026.
+> Mise à jour : 14 novembre 2026 (base de données multijoueur prête).
 > Journal détaillé, session par session : `info/ETAT_PROJET.md`.
 
 ---
@@ -58,8 +58,8 @@
 ## 3. La suite, dans l'ordre
 
 ### Étape 2 — Multijoueur (Supabase)
-1. Créer un projet Supabase gratuit. C'est à faire par toi : URL et clé `anon` à mettre dans `.env.local`. Voir `supabase/README.md`.
-2. Migrations : profils, sessions, joueurs d'une session (maximum 2), pièces découvertes, interrogatoires, notes (communes et privées), liens du tableau, verdicts. **RLS sur toutes les tables**, solutions dans un schéma privé.
+1. ✅ **Base de données écrite et testée** (`supabase/migrations`, `supabase/seed.sql`, `npm run test:db`) : profils, sessions (2 joueurs maximum), code d'invitation sécurisé, pièces numérotées sans doublon, interrogatoires, notes communes et privées, tableau et liens, chronologie, verdict à deux signatures et barème calculés côté serveur, solution dans un schéma privé. RLS et droits par colonne. 34 vérifications passent.
+2. ⏳ **À faire par toi** : créer le projet Supabase gratuit et y exécuter les deux fichiers SQL (environ 10 minutes, pas à pas dans `supabase/README.md`), puis me donner l'URL et la clé `anon` (jamais la `service_role`).
 3. Connexion et profil d'inspecteur (écran 02).
 4. Salle privée : code d'invitation, lobby, présence, statut « prêt » (écran 03).
 5. Synchronisation des pièces du bureau 3D entre deux navigateurs, sans doublon, avec reprise après rechargement.
