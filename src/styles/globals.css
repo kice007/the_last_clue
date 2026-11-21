@@ -83,6 +83,52 @@
     background: radial-gradient(ellipse at 50% 45%, transparent 35%, rgb(10 12 14 / 0.72) 78%, rgb(10 12 14 / 0.96) 100%);
   }
 
+  /* Plaque de laiton gravée (menu du bureau de l'inspecteur) */
+  .plaque {
+    color: #2a1c0c;
+    background: linear-gradient(180deg, #e2c38a 0%, #c9a464 48%, #a8844a 100%);
+    border: 1px solid #6e5428;
+    box-shadow:
+      inset 0 1px 0 rgb(255 240 205 / 0.6),
+      inset 0 -1px 0 rgb(60 40 15 / 0.45),
+      0 10px 24px -8px rgb(0 0 0 / 0.75),
+      0 0 32px -6px rgb(232 196 138 / 0.35);
+    text-shadow: 0 1px 0 rgb(255 236 196 / 0.45);
+  }
+  .plaque-off {
+    color: #3a3128;
+    background: linear-gradient(180deg, #a59a86 0%, #847a68 55%, #6c6353 100%);
+    border-color: #4a4236;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.25), 0 10px 24px -8px rgb(0 0 0 / 0.75);
+    cursor: default;
+  }
+
+  /* Repère d'un objet-menu : point laiton qui respire */
+  .office-marker {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    border: 1px solid rgb(232 196 138 / 0.55);
+    background: radial-gradient(circle, #e8c48a 0 2.5px, transparent 3px);
+    transition: opacity 300ms;
+    animation: marker-breathe 2.8s ease-in-out infinite;
+  }
+  .office-marker-off {
+    border-color: rgb(215 212 202 / 0.2);
+    background: radial-gradient(circle, rgb(215 212 202 / 0.35) 0 2.5px, transparent 3px);
+    animation: none;
+  }
+
+  /* Fiche du carnet de constatations : papier ligné, marge rouge */
+  .notebook {
+    background-color: #e9e0c9;
+    background-image:
+      linear-gradient(90deg, transparent 22px, rgb(160 40 30 / 0.35) 22px, rgb(160 40 30 / 0.35) 23px, transparent 23px),
+      repeating-linear-gradient(180deg, transparent 0 27px, rgb(60 80 110 / 0.14) 27px 28px),
+      radial-gradient(ellipse at 30% 20%, rgb(255 250 235 / 0.5), transparent 60%);
+  }
+
   .eyebrow {
     font-family: var(--font-mono);
     font-size: 0.6875rem;
@@ -99,6 +145,16 @@
   60% { transform: translate(-4%, -1%); }
   80% { transform: translate(3%, 3%); }
   100% { transform: translate(0, 0); }
+}
+
+@keyframes marker-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50% { transform: scale(1.18); opacity: 0.45; }
+}
+
+@keyframes press-blink {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.7; }
 }
 
 @media (prefers-reduced-motion: reduce) {

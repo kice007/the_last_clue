@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { ButtonLink } from '@/components/ui/Button'
 
 type ScreenKey =
-  | 'auth' | 'profile' | 'lobby' | 'cases' | 'briefing' | 'office' | 'scene'
+  | 'auth' | 'profile' | 'lobby' | 'cases' | 'case' | 'options' | 'briefing' | 'office' | 'scene'
   | 'evidence' | 'suspects' | 'interrogation' | 'board' | 'verdict' | 'revelation' | 'history'
 
 interface PlaceholderScreenProps {
@@ -22,8 +22,8 @@ export function PlaceholderScreen({ screen, phase }: PlaceholderScreenProps) {
         <h1 className="mt-6 font-display text-5xl font-medium text-paper md:text-6xl">{ts(`${screen}.title`)}</h1>
         <p className="mt-4 font-display text-xl italic text-paper-muted">{ts(`${screen}.summary`)}</p>
         <p className="mt-10 font-mono text-xs text-paper-faint">{t('placeholder.note')}</p>
-        <ButtonLink to="/" variant="ghost" className="mt-10">
-          {t('nav.home')}
+        <ButtonLink to="/office" variant="ghost" className="mt-10">
+          {t('nav.office')}
         </ButtonLink>
       </div>
     </main>

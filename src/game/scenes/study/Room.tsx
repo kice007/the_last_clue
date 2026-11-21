@@ -8,9 +8,9 @@ import { rugTexture } from '@/game/materials/procedural'
 export const ROOM = { w: 7, d: 6, h: 3.4, wainscot: 1.1 }
 const T = 0.12 // épaisseur des murs
 
-type Box = { pos: [number, number, number]; size: [number, number, number] }
+export type Box = { pos: [number, number, number]; size: [number, number, number] }
 
-function useWallMaterials() {
+export function useWallMaterials() {
   const panel = usePbr('dark_paneled_wood', 2, 1)
   const plaster = usePbr('plastered_wall_04', 2, 1.4)
   return useMemo(
@@ -24,7 +24,15 @@ function useWallMaterials() {
 }
 
 /** Mur découpé en tranches basse (lambris) / haute (enduit) à partir de boîtes. */
-function WallBoxes({ boxes, materials }: { boxes: Box[]; materials: ReturnType<typeof useWallMaterials> }) {
+export function WallBoxes({
+  boxes,
+  materials,
+  wainscot = ROOM.wainscot,
+}: {
+  boxes: Box[]
+  materials: ReturnType<typeof useWallMaterials>
+  wainscot?: number
+}) {
   return (
     <>
       {boxes.map((b, i) => {
@@ -32,7 +40,7 @@ function WallBoxes({ boxes, materials }: { boxes: Box[]; materials: ReturnType<t
         const [sx, sy, sz] = b.size
         const bottom = y - sy / 2
         const top = y + sy / 2
-        const split = ROOM.wainscot
+        const split = wainscot
         const parts: { y: number; h: number; m: THREE.Material }[] = []
         if (bottom < split) parts.push({ y: (bottom + Math.min(top, split)) / 2, h: Math.min(top, split) - bottom, m: materials.panel })
         if (top > split) parts.push({ y: (Math.max(bottom, split) + top) / 2, h: top - Math.max(bottom, split), m: materials.plaster })
@@ -46,15 +54,22 @@ function WallBoxes({ boxes, materials }: { boxes: Box[]; materials: ReturnType<t
   )
 }
 
-function RainGlass() {
+/** Vitre ruisselante de pluie (shader). Par défaut : fenêtre du bureau de Whitmore. */
+export function RainGlass({
+  position = [0, 1.875, -3 + T / 2 - 0.02],
+  size = [1.7, 2.25],
+}: {
+  position?: [number, number, number]
+  size?: [number, number]
+}) {
   const mat = useRef<THREE.ShaderMaterial>(null)
   useFrame(({ clock }) => {
     if (mat.current) mat.current.uniforms.uTime!.value = clock.elapsedTime
   })
   const uniforms = useMemo(() => ({ uTime: { value: 0 } }), [])
   return (
-    <mesh position={[0, 1.875, -3 + T / 2 - 0.02]}>
-      <planeGeometry args={[1.7, 2.25]} />
+    <mesh position={position}>
+      <planeGeometry args={size} />
       <shaderMaterial
         ref={mat}
         transparent

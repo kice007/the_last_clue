@@ -6,3 +6,8 @@ dist
 *.log
 .DS_Store
 .vite
+tools/blender/rendus/
+tools/blender/sketchfab/
+
+# CLI Supabase (local)
+supabase/.temp/

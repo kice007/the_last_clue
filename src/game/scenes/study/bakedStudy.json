@@ -1,0 +1,10 @@
+{
+  "scale": 1.325405478477478,
+  "lightmaps": {
+    "room": "lm_room.webp",
+    "furniture": "lm_furniture.webp",
+    "small": "lm_small.webp"
+  },
+  "glb": "room.glb",
+  "samples": 256
+}

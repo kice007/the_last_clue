@@ -5,16 +5,15 @@ import { usePbr } from '@/game/materials/pbr'
 import { bookSpineTexture } from '@/game/materials/procedural'
 import { Prop } from '@/game/objects/Prop'
 
-/** Bureau à double caisson, plateau gainé de cuir, ouvert des deux côtés. Centre : (0, 0, -1.7). */
-function Desk() {
+/** Bureau à double caisson, plateau gainé de cuir. Tiroirs côté -z. Par défaut, centre : (0, 0, -1.7). */
+export function Desk({ position = [0, 0, -1.7], rotation = 0 }: { position?: [number, number, number]; rotation?: number }) {
   const walnut = usePbr('black_walnut_veneer_01', 1, 1)
   const leather = usePbr('brown_leather', 1.5, 1)
   const wood = useMemo(() => new THREE.MeshStandardMaterial({ ...walnut, color: '#a57d5a', roughness: 0.45 }), [walnut])
   const top = useMemo(() => new THREE.MeshStandardMaterial({ ...leather, color: '#3d4a33', roughness: 0.75 }), [leather])
   const brass = useMemo(() => new THREE.MeshStandardMaterial({ color: '#b48b4c', metalness: 1, roughness: 0.3 }), [])
-  const z = -1.7
   return (
-    <group position={[0, 0, z]}>
+    <group position={position} rotation={[0, rotation, 0]}>
       <RoundedBox args={[1.7, 0.05, 0.86]} radius={0.018} smoothness={4} position={[0, 0.745, 0]} material={wood} castShadow receiveShadow />
       <RoundedBox args={[1.62, 0.03, 0.8]} radius={0.01} smoothness={3} position={[0, 0.712, 0]} material={wood} castShadow />
       <mesh position={[0, 0.7705, 0]} rotation={[-Math.PI / 2, 0, 0]} material={top} receiveShadow>

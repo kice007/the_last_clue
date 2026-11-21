@@ -37,11 +37,27 @@ Téléchargés par `scripts/fetch-polyhaven.mjs` (glTF 1k, textures JPG 1k). Fic
 | `horse_statue_01` | model | Horse Statue 01 | Rico Cilliers | [https://polyhaven.com/a/horse_statue_01](https://polyhaven.com/a/horse_statue_01) | CC0 | Non | `public\assets\props\polyhaven\horse_statue_01/horse_statue_01.gltf` |
 | `pocket_watch` | model | Pocket Watch | PierreB3D | [https://polyhaven.com/a/pocket_watch](https://polyhaven.com/a/pocket_watch) | CC0 | Non | `public\assets\props\polyhaven\pocket_watch/pocket_watch.gltf` |
 
+## Sketchfab (CC BY 4.0, attribution obligatoire)
+
+Téléchargés au format GLB dans `tools/blender/sketchfab/` (hors git), utilisés dans la scène Blender du bureau de Whitmore (`tools/blender/whitmore_study.py`). Licence : https://creativecommons.org/licenses/by/4.0/
+
+| Modèle | Auteur | Source | Usage |
+|---|---|---|---|
+| Antique Desk | Matthew Collings | https://sketchfab.com/3d-models/c491f647da5947978ba8113951ee2efc | Bureau |
+| Fine Persian Heriz Carpet | mfb64 | https://sketchfab.com/3d-models/e198f1099ac34274ae2c867226adde79 | Tapis |
+| Fancy Victorian Fireplace | GameDevMoot | https://sketchfab.com/3d-models/4aea1677acdb44e588f6d6ea6065731a | Cheminée (matériau marbre Poly Haven appliqué) |
+| Curtains | CommunicationNode | https://sketchfab.com/3d-models/e5b01c717dbd4244b861168eddd67375 | Rideaux (voilage retiré) |
+| Antique Captain's Chair | Juh | https://sketchfab.com/3d-models/dcde9423f818420f854fddea25e3a3dd | Fauteuil de bureau |
+| Armchair Chesterfield | Medji | https://sketchfab.com/3d-models/c0e3ebb460d84e249e9043e0c4f6a648 | Fauteuil près du feu |
+| Antique wooden bookcase - Game model | Lorenzo Drago | https://sketchfab.com/3d-models/75aa9519195647d99cf1e2d4863dbe87 | Bibliothèque |
+| Antique Book Set | FrodoUndead | https://sketchfab.com/3d-models/a7e1164cca004a65ab53ce0e8553586c | Pile de livres sur le bureau |
+
 ## Assets générés
 
 | Asset | Origine | Remarque |
 |---|---|---|
 | Textures procédurales (tapis, papier, cendres, mouchoir, pluie) | Code (`src/game`) | Créations originales |
+| Bureau de l'inspecteur : carte du comté, avis, diplômes, chemises, rapports | Code (`src/game/scenes/office/officeTextures.ts`) | Créations originales |
 | Ambiance sonore (pluie, feu, horloge) | Web Audio procédural (`src/lib/audio`) | Créations originales |
 | Images de la maquette `info/tlc.pen` | Génération IA pen.dev | Usage maquette uniquement, à revalider avant production |
 

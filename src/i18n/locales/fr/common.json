@@ -7,7 +7,8 @@
   },
   "nav": {
     "back": "Retour",
-    "home": "Accueil"
+    "home": "Accueil",
+    "office": "Retour au bureau"
   },
   "webgl": {
     "title": "Affichage 3D indisponible",

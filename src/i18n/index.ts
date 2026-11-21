@@ -1,7 +1,7 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import frCommon from './locales/fr/common.json'
-import frLanding from './locales/fr/landing.json'
+import frMenu from './locales/fr/menu.json'
 import frScreens from './locales/fr/screens.json'
 import frInvestigation from './locales/fr/investigation.json'
 import enCommon from './locales/en/common.json'
@@ -18,7 +18,7 @@ export type Locale = (typeof SUPPORTED_LOCALES)[number]
 export const DEFAULT_LOCALE: Locale = 'fr'
 
 export const resources = {
-  fr: { common: frCommon, landing: frLanding, screens: frScreens, investigation: frInvestigation },
+  fr: { common: frCommon, menu: frMenu, screens: frScreens, investigation: frInvestigation },
   en: { common: enCommon },
 } as const
 
@@ -27,7 +27,7 @@ void i18n.use(initReactI18next).init({
   lng: DEFAULT_LOCALE,
   fallbackLng: DEFAULT_LOCALE,
   defaultNS: 'common',
-  ns: ['common', 'landing', 'screens', 'investigation'],
+  ns: ['common', 'menu', 'screens', 'investigation'],
   interpolation: { escapeValue: false },
   returnNull: false,
 })

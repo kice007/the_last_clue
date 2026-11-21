@@ -1,0 +1,34 @@
+{
+  "title": {
+    "tagline": "Deux inspecteurs. Une vérité.",
+    "enter": "Entrer au poste",
+    "private": "Réservé aux inspecteurs Hale et Reyes",
+    "press": "Appuyez sur Entrée"
+  },
+  "office": {
+    "place": "Poste de Thornby · Bureau de l'inspecteur {{name}}",
+    "hint": "Survolez un objet · cliquez pour ouvrir",
+    "loading": "Le poste s'éveille…",
+    "partner": {
+      "name": "Insp. Reyes",
+      "status": "Hors ligne"
+    },
+    "spots": {
+      "classeur": { "title": "Nouvelle enquête", "sub": "Ouvrir le classeur des affaires", "off": "" },
+      "telephone": { "title": "Rejoindre un partenaire", "sub": "Décrocher · saisir le code", "off": "" },
+      "papiers": { "title": "Reprendre", "sub": "Retourner à l'enquête en cours", "off": "Aucune enquête en cours" },
+      "diplomes": { "title": "Affaires classées", "sub": "Vos enquêtes et vos scores", "off": "" },
+      "lampe": { "title": "Options", "sub": "Son · affichage · commandes", "off": "" },
+      "portemanteau": { "title": "Quitter le poste", "sub": "Se déconnecter", "off": "" }
+    },
+    "phone": {
+      "eyebrow": "Standard du poste",
+      "title": "Rejoindre un partenaire",
+      "body": "Demandez à votre partenaire le code de sa salle d'enquête, puis saisissez-le.",
+      "label": "Code de la salle",
+      "join": "Rejoindre la salle",
+      "hangUp": "Raccrocher",
+      "invalid": "Le code compte 6 signes."
+    }
+  }
+}

@@ -2,6 +2,8 @@
   "auth": { "title": "Identification", "summary": "Connexion et création du profil d'inspecteur." },
   "profile": { "title": "Profil d'inspecteur", "summary": "Nom de service et portrait." },
   "lobby": { "title": "Salle d'enquête privée", "summary": "Créer une salle, partager le code, attendre son partenaire." },
+  "case": { "title": "THE LAST LETTER", "summary": "Page de l'affaire : résumé, difficulté, durée, ouvrir une salle." },
+  "options": { "title": "Options", "summary": "Son, affichage, commandes, langue et compte." },
   "cases": { "title": "Dossiers disponibles", "summary": "Choix de l'affaire, difficulté, durée." },
   "briefing": { "title": "Briefing", "summary": "Victime, lieu, circonstances et objectifs." },
   "office": { "title": "Bureau d'enquête", "summary": "Hub 3D : dossiers, archives, tableau." },

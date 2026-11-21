@@ -1,7 +1,7 @@
 # THE LAST CLUE — Avancement et suite
 
 > Jeu d'enquête criminelle coopératif à deux, dans le navigateur. Projet **privé**, joué par deux personnes.
-> Mise à jour : 14 novembre 2026 (base de données multijoueur prête).
+> Mise à jour : 20 novembre 2026 (écran titre et bureau de l'inspecteur codés).
 > Journal détaillé, session par session : `info/ETAT_PROJET.md`.
 
 ---
@@ -43,6 +43,8 @@
   - 7 points de vue et rotation à la souris.
   - 15 objets examinables : 4 de l'affaire, 11 ordinaires.
   - Fiche d'examen avec l'objet qui tourne, dossier local.
+- **`/`** : écran titre (lettre et montre en 3D, « Entrer au poste », touche Entrée).
+- **`/office`** : menu de jeu A, le bureau de l'inspecteur en 3D. 6 objets en relief : classeur (nouvelle enquête), téléphone (rejoindre avec un code), papiers (reprendre, grisé tant qu'aucune enquête n'est en cours), diplômes (affaires classées), lampe (options), porte-manteau (quitter).
 - `/prototype/assets` (développement uniquement) : planche de comparaison des modèles.
 - Scripts : `scripts/shot.mjs` et `scripts/shot-study.mjs` (captures), `scripts/test-camera.mjs` (test des gestes), `scripts/fetch-polyhaven.mjs` (téléchargement des assets).
 - `npm run build` passe.
@@ -51,7 +53,7 @@
 
 ## 2. Décision en attente
 
-- **Menu A** (bureau de l'inspecteur, objets cliquables en relief) **ou Menu B** (menu 2D classique) ? Recommandation : A.
+- ✅ **Menu A retenu** (bureau de l'inspecteur en 3D) le 20 novembre 2026. Les frames de `tlc.pen` sont rangées dans l'ordre du parcours (étapes 1 à 14 sur une ligne, Options en annexe, ancienne landing en archive).
 
 ---
 
@@ -59,14 +61,14 @@
 
 ### Étape 2 — Multijoueur (Supabase)
 1. ✅ **Base de données écrite et testée** (`supabase/migrations`, `supabase/seed.sql`, `npm run test:db`) : profils, sessions (2 joueurs maximum), code d'invitation sécurisé, pièces numérotées sans doublon, interrogatoires, notes communes et privées, tableau et liens, chronologie, verdict à deux signatures et barème calculés côté serveur, solution dans un schéma privé. RLS et droits par colonne. 34 vérifications passent.
-2. ⏳ **À faire par toi** : créer le projet Supabase gratuit et y exécuter les deux fichiers SQL (environ 10 minutes, pas à pas dans `supabase/README.md`), puis me donner l'URL et la clé `anon` (jamais la `service_role`).
-3. Connexion et profil d'inspecteur (écran 02).
+2. ⏳ **À faire par toi** : créer le projet Supabase gratuit **sur un autre compte** (le tien est à 2 projets ; ta compagne peut le créer et t'inviter, mais elle ne doit pas lire `seed.sql`) et y exécuter les deux fichiers SQL (environ 10 minutes, pas à pas dans `supabase/README.md`), puis me donner l'URL et la clé `anon` (jamais la `service_role`).
+3. ✅ Jeu branché sur Supabase (adaptateur réel + adaptateur local, connexion mémorisée). ⏳ Écran de connexion et profil d'inspecteur (02).
 4. Salle privée : code d'invitation, lobby, présence, statut « prêt » (écran 03).
 5. Synchronisation des pièces du bureau 3D entre deux navigateurs, sans doublon, avec reprise après rechargement.
 
 ### Étape 3 — Structure de navigation
-6. Écran titre, menu de jeu (A ou B), Options (préférences par joueur), page d'affaire (`/office`, `/cases/:caseId`).
-7. Reporter dans le code la nouvelle structure (la landing codée est encore l'ancienne version).
+6. ✅ Écran titre et menu de jeu A (`/`, `/office`). ⏳ Options (préférences par joueur) et page d'affaire (`/cases/:caseId`).
+7. ✅ Nouvelle structure reportée dans le code (ancienne landing retirée).
 
 ### Étape 4 — Enquête complète
 8. Données de l'affaire D au format des schémas : personnages, questions, conditions, pièces, faits.

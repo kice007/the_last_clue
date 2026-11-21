@@ -6,10 +6,10 @@ export const prototypeCatalog: CaseSummary[] = [
     id: 'the_last_letter',
     title: 'THE LAST LETTER',
     category: 'fictional',
-    difficulty: 'medium',
-    durationMinutes: [45, 60],
+    difficulty: 'hard',
+    durationMinutes: [60, 75],
     summary: {
-      fr: "Alexander Whitmore est retrouvé mort dans son bureau fermé à clé, pendant une réception. Plusieurs témoins affirment l'avoir vu vivant après l'heure de sa mort.",
+      fr: "Alexander Whitmore est retrouvé mort dans son bureau, porte fermée à clé. Sa fille avoue l'avoir tué. Trois témoins l'ont vu vivant après.",
     },
     location: { fr: 'Blackwood Manor, Yorkshire du Nord' },
     incidentDate: '1908-11-14',
