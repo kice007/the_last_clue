@@ -2,7 +2,7 @@
 
 ## Reprendre ici (2026-11-21, session 11) : pièce Blender dans le jeu
 
-**État : la pièce précalculée s'affiche dans `/prototype/bureau`, mais une dernière passe de calcul reste à faire. Rien n'est commité (consigne de l'utilisateur).**
+**État : la pièce précalculée s'affiche dans `/prototype/bureau`, mais une dernière passe de calcul reste à faire. Tout est commité et poussé sur main (dce2b8e, 21/11).**
 
 - **Fait** :
   - `tools/blender/bake_study.py` (lancé après `whitmore_study.py` dans la même session Blender) calcule la lumière de la pièce et exporte `public/assets/scenes/whitmore/room.glb` (Draco, environ 10,5 Mo), les lightmaps `lm_room/lm_furniture/lm_small` et le manifeste `src/game/scenes/study/bakedStudy.json`.
